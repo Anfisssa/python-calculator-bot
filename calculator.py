@@ -50,3 +50,16 @@ def main():
 
 if __name__ == "__main__":
     main()
+# ... (старый код)
+    elif operator == '*':
+        return num1 * num2
+    elif operator == '/':
+        if num2 == 0:
+            return "Ошибка: Деление на ноль невозможно!"
+        return num1 / num2
+# >>>>> Вставьте этот блок сюда <<<<<
+    elif operator == '**':
+        return num1 ** num2
+# >>>>> Конец нового блока <<<<<
+    else:
+        return "Ошибка: Неизвестный оператор. Используйте +, -, *, / или **."
